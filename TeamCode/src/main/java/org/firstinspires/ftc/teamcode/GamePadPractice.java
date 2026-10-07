@@ -15,7 +15,7 @@ public class GamePadPractice extends OpMode {
         //*runs 50 times a second
         double speedForward = gamepad1.left_stick_y / 2.0;
         double xStickDifference = gamepad1.left_stick_x-gamepad1.right_stick_x;
-        double sumOfTrigger = gamepad1.left_trigger + gamepad1.right_trigger
+        double sumOfTrigger = gamepad1.left_trigger + gamepad1.right_trigger;
 
         telemetry.addData("left x", gamepad1.left_stick_x);
         telemetry.addData("left y", speedForward);
@@ -25,7 +25,7 @@ public class GamePadPractice extends OpMode {
         telemetry.addData("a button",gamepad1.a);
         telemetry.addData("Right trigger",gamepad1.right_trigger);
         telemetry.addData("Left Trigger", gamepad1.left_trigger);
-        telemetry.addData("Sum of Triggers", sumOfTrigger)
+        telemetry.addData("Sum of Triggers", sumOfTrigger);
         telemetry.addData("Difference Between x sticks", xStickDifference);
 
 
