@@ -11,7 +11,7 @@ public class TestBench {
         touchSensor.setMode((DigitalChannel.Mode.INPUT));
     }
 
-    public boolean isTouchSensorPresssed() {
+    public boolean isTouchSensorPressed() {
             return !touchSensor.getState();
     }
 
